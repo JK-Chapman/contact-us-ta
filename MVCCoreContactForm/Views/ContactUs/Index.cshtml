@@ -1,0 +1,42 @@
+﻿@model MVCCoreContactForm.Models.ContactFormModel
+
+@{
+    ViewData["Title"] = "Contact Us";
+}
+<head>
+    <link rel="stylesheet" href="~/css/ContactUs.css" />
+</head>
+<body>
+    @using (Html.BeginForm("Index", "ContactUs", FormMethod.Post))
+    {
+        <div class="contactContainer">
+            <h1 class="contactH1">Contact Us Form</h1>
+
+            <div class="contactDiv">
+                <label for="firstName" class="contactLabel">First Name</label>
+                @Html.TextBoxFor(m => m.firstName, new { @class = "contactInput" })
+                <span asp-validation-for="firstName" class="errorText"></span>
+            </div>
+
+            <div class="contactDiv">
+                <label for="lastName" class="contactLabel">Last Name</label>
+                @Html.TextBoxFor(m => m.lastName, new { @class = "contactInput" })
+                <span asp-validation-for="lastName" class="errorText"></span>
+            </div>
+
+            <div class="contactDiv">
+                <label for="email" class="contactLabel">Email</label>
+                @Html.TextBoxFor(m => m.email, new { @class = "contactInput" })
+                <span asp-validation-for="email" class="errorText"></span>
+            </div>
+
+            <div class="contactDiv">
+                <label for="message" class="contactLabel">Message</label>
+                @Html.TextAreaFor(m => m.message, new { @class = "contactTextArea" })
+                <span asp-validation-for="message" class="errorText"></span>
+            </div>
+
+            <button class="contactSubmit" type="submit">SUBMIT</button>
+        </div>
+    }
+</body>

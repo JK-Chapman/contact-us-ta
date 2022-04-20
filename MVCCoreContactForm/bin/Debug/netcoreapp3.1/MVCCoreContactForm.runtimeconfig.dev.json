@@ -1,0 +1,8 @@
+{
+  "runtimeOptions": {
+    "additionalProbingPaths": [
+      "C:\\Users\\jchapman.TERRAPIN\\.dotnet\\store\\|arch|\\|tfm|",
+      "C:\\Users\\jchapman.TERRAPIN\\.nuget\\packages"
+    ]
+  }
+}

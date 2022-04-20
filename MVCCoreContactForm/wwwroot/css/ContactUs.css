@@ -1,0 +1,77 @@
+﻿.contactDiv {
+	padding-bottom: 20px;
+}
+
+.contactH1 {
+	font-family: Arial;
+	font-size: 38px;
+	font-weight: bold;
+}
+
+.contactLabel {
+	display: block;
+	font-family: Arial;
+	font-size: 16px;
+	padding-bottom: 10px;
+	font-weight: bold;
+}
+
+.contactInput {
+	display: block;
+	font-family: Arial;
+	font-size: 16px;
+	height: 36px;
+	background-color: #FFFFFF;
+	border-style: solid;
+	border-color: #0087AA;
+	width: 50%;
+}
+
+.contactSubmit {
+	transition-duration: 0.4s;
+	font-family: Arial;
+	font-size: 16px;
+	height: 36px;
+	width: 50%;
+	background-color: #0087AA;
+	border-style: solid;
+	border-color: #0087AA;
+	color: white;
+	font-weight: bold;
+}
+
+.contactSubmit:hover {
+	background-color: #1997B7;
+}
+
+.contactTextArea {
+	display: block;
+	font-family: Arial;
+	font-size: 16px;
+	height: 200px;
+	box-sizing: content-box;
+	width: 50%;
+	border-color: #0087AA;
+	margin-bottom: 20px;
+}
+
+.contactContainer {
+	float: left;
+	margin-left: 5%;
+	width: 100%
+}
+
+.errorText {
+	font-family: Arial;
+	font-size: 16px;
+	color: orangered;
+}
+
+.homeText {
+	font-family: Arial;
+	font-size: 16px;
+}
+
+body {
+	background-color: aliceblue;
+}
